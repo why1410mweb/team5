@@ -1,0 +1,248 @@
+@import url(m_reset.css);
+html{
+    font-size: 62.5%;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.wrap{
+    .box(vertical);
+    //头部
+    header{
+        .full(100%,4.2rem,#333333);
+        .box(horizontal);
+        .left{
+            .full(6rem,100%,none);
+            .box(horizontal);
+            img{
+                .full(1rem,1.2rem,none);
+                margin: 1.6rem 0.5rem 0 1.5rem;
+            }
+            p{
+                 color: #FFF;
+                 line-height: 4.2rem;
+                 letter-spacing: 0.1rem;
+            }
+        }
+        .center{
+            -webkit-box-flex: 1;
+            text-align: center;
+            p{
+                line-height: 4.2rem;
+                color: #FFF;
+                letter-spacing: 0.1rem;
+            }
+        }
+        .right{
+            .full(6rem,100%,none);
+        }
+    }
+    //主体
+    section{
+        -webkit-box-flex: 1;
+        overflow: auto;
+        &::-webkit-scrollbar{width: 0;}
+        //手机号，密码
+        .phone{
+            .full(100%,9rem,none);
+            margin-top: 1.7rem;
+            .phone_number{
+                .full(95%,4.5rem,none);
+                margin-left: 2.5%;
+                position: relative;
+                border: 0.1rem solid #9a9a9a;
+                img{
+                    .full(1.5rem,2rem,none);
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1rem;    
+                }
+                p{
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 3rem;
+                    color: #cbcbcb;
+                }
+               input{
+                   .full(100%,4.5rem,none);
+                   position: absolute;
+                   top: 0rem;
+                   left: 0rem;
+                   padding-left: 4rem;
+                   border: none;
+               }
+               span{
+                   .full(8rem,100%,none);
+                   position: absolute;
+                   top: 0.7rem;
+                   right: 1rem;
+                   color: red;
+               }
+            }
+            .phone_pwd{
+                .full(95%,4.5rem,none);
+                margin-left: 2.5%;
+                position: relative;
+                border: 0.1rem solid #9a9a9a;
+                border-top:none ;
+                img{
+                    .full(1.5rem,2rem,none);
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1rem;    
+                }
+                p{
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 3rem;
+                    color: #cbcbcb;
+                }
+               input{
+                   .full(100%,4.5rem,none);
+                   position: absolute;
+                   top: 0rem;
+                   left: 0rem;
+                   padding-left: 4rem;
+                   border: none;
+               }
+                span{
+                   .full(8rem,100%,none);
+                   position: absolute;
+                   top: 0.7rem;
+                   right: 0rem;
+                   color: red;
+               }
+            }
+        }
+        .pwd{
+            .full(100%,9rem,none);
+            margin-top: 1.7rem;
+            .phone_pwd1{
+                .full(95%,4.5rem,none);
+                margin-left: 2.5%;
+                position: relative;
+                border: 0.1rem solid #9a9a9a;
+                img{
+                    .full(1.5rem,2rem,none);
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1rem;    
+                }
+                p{
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 3rem;
+                    color: #cbcbcb;
+                }
+               input{
+                   .full(100%,4.5rem,none);
+                   position: absolute;
+                   top: 0rem;
+                   left: 0rem;
+                   padding-left: 4rem;
+                   border: none;
+               }
+            }
+            .phone_pwd2{
+                .full(95%,4.5rem,none);
+                margin-left: 2.5%;
+                position: relative;
+                border: 0.1rem solid #9a9a9a;
+                border-top:none ;
+                img{
+                    .full(1.5rem,2rem,none);
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1rem;    
+                }
+                p{
+                    position: absolute;
+                    top: 1.5rem;
+                    left: 3rem;
+                    color: #cbcbcb;
+                }
+               input{
+                   .full(100%,4.5rem,none);
+                   position: absolute;
+                   top: 0rem;
+                   left: 0rem;
+                   padding-left: 4rem;
+                   border: none;
+               }
+               a{
+                   position: absolute;
+                   top: 0.6rem;
+                   right: 0rem;
+                   padding: 0.8rem 2rem;
+                   background: #46c68b;
+                   border-radius:1.5rem ;
+                   color: #FFF;
+                   letter-spacing: 0.1rem;
+               }
+            }
+        }
+        .nav_list{
+            .full(95%,14rem,none);
+            margin-left: 2.5%;
+           
+            .list_one{
+                .full(100%,4rem,none);
+                 .box(horizontal);
+                 line-height: 4rem;
+                 font-size: 1.4rem;
+                 position: relative;
+                 input{
+                     color: #46c68b;
+                     .full(1.2rem,1.5rem,none);
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 0;
+                 }
+                 p{
+                     margin-left: 1.5rem;
+                 }
+                 span{
+                     color: #46c68b;
+                 }
+            }
+            .list_two{
+                .full(100%,4.5rem,#46c68b);
+                margin-top: 1rem;
+                border-radius:0.5rem ;
+                text-align: center;
+                line-height: 4.5rem;
+                a{
+                    color: #FFF;
+                    font-size: 1.8rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+            .list_three{
+                .full(100%,4.5rem,none);
+                text-align: center;
+                line-height: 4.5rem;
+                p{
+                    font-size: 1.5rem;
+                    a{
+                        color: #46c68b;
+                    }
+                }
+                
+            }
+        }
+    }
+    //页脚
+    footer{
+        .full(100%,0rem,none);
+    }
+}
