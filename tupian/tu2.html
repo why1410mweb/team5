@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="css/tu2.css"/> 
+		<link rel="stylesheet" href="css/swiper.css" />
+	</head>
+	<body>
+		<div class="warp">
+			<header>
+				<div class="left"><span><</span><h2>关闭</h2></div>
+				<div class="center">速派魔方-快递员</div>
+				<div class="right"></div>
+			</header>
+			<section id="wrap">
+				<div class="nav">
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide">
+				            	<img src="images/TU2_1_02.png" />
+				            </div>
+				            <div class="swiper-slide">
+				            	<img src="images/TU2_1_02.png" />
+				            </div>
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination"></div>
+				        <!-- Add Arrows -->
+				        <!--<div class="swiper-button-next"></div>
+				        <div class="swiper-button-prev"></div>-->
+				    </div>
+					
+				</div>
+				<div class="banner">
+					<dl>
+						<dt><img src="images/TU2_1_05.png"/></dt>
+						<dd>扫码存件</dd>
+					</dl>
+					<dl style="border-right: none;">
+						<dt><img src="images/TU2_1_05.png"/></dt>
+						<dd>回收快件</dd>
+					</dl>
+				</div>
+				<div class="banner">
+					<dl>
+						<dt><img src="images/TU2_1_05.png"/></dt>
+						<dd>扫码存件</dd>
+					</dl>
+					<dl style="border-right: none;">
+						<dt><img src="images/TU2_1_05.png"/></dt>
+						<dd>回收快件</dd>
+					</dl>
+				</div>
+			</section>
+			<footer>
+				<dl>
+					<dt><img src="images/TU2_1_09.png"/></dt>
+					<dd>首页</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/TU2_1_11.png"/></dt>
+					<dd>快递记录</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/TU2_1_09.png"/></dt>
+					<dd>我的</dd>
+				</dl>
+			</footer>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>	
+<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script>
+		var myScroll= new IScroll('#wrap',{
+			scrollbars: true,
+			disableMouse: true,
+    		disablePointer: true,
+    		scrollbars: 'custom'
+		})
+		 var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        slidesPerView:1,
+				        paginationClickable: true,
+				        spaceBetween: 10,
+				        freeMode: true,
+//				        nextButton: '.swiper-button-next',
+//  					prevButton: '.swiper-button-prev',
+    					loop:true,
+    					autoplay : 1000//轮播时间
+				    });	
+	</script>
