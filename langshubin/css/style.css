@@ -1,0 +1,214 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .left {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.4rem;
+  color: white;
+}
+header .left span {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bolder;
+  padding-right: 0.3rem;
+}
+header .right {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: white;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .main_on {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main_on .user {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1rem;
+}
+section .main_on .user .user_img {
+  width: 15%;
+  height: auto;
+  background: none;
+  border-right: 1px solid #ccc;
+}
+section .main_on .user .user_img img {
+  width: 2rem;
+  height: 3rem;
+  background: none;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+section .main_on .user .inputUser {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+section .main_on .user .inputUser input {
+  height: 3.5rem;
+  width: 80%;
+  border: none;
+}
+section .main_on .password {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .main_on .password .pwd_img {
+  width: 15%;
+  height: auto;
+  background: none;
+  border-right: 1px solid #ccc;
+}
+section .main_on .password .pwd_img img {
+  width: 2rem;
+  height: 3rem;
+  background: none;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+section .main_on .password .inputPwd {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+section .main_on .password .inputPwd input {
+  height: 3.5rem;
+  width: 80%;
+  border: none;
+}
+section .main_under {
+  margin-top: 2rem;
+}
+section .main_under .confirmPwd {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .main_under .confirmPwd .conPwd_img {
+  width: 15%;
+  height: auto;
+  background: none;
+  border-right: 1px solid #ccc;
+}
+section .main_under .confirmPwd .conPwd_img img {
+  width: 2rem;
+  height: 3rem;
+  background: none;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+section .main_under .confirmPwd .inputConPwd {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+section .main_under .confirmPwd .inputConPwd input {
+  height: 3.5rem;
+  width: 80%;
+  border: none;
+}
+section .main_under .testNum {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .main_under .testNum .testNum_img {
+  width: 15%;
+  height: auto;
+  background: none;
+  border-right: 1px solid #ccc;
+}
+section .main_under .testNum .testNum_img img {
+  width: 3rem;
+  height: 2rem;
+  background: none;
+  padding-left: 0.5rem;
+  padding-top: 0.8rem;
+}
+section .main_under .testNum .inputTestNum {
+  -webkit-box-flex: 1;
+  padding-left: 2rem;
+}
+section .main_under .testNum .inputTestNum input {
+  height: 3.5rem;
+  width: 50%;
+  border: none;
+}
+section .main_under .testNum .inputTestNum button {
+  width: 40%;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 1.3rem;
+  color: white;
+  background: #46c68b;
+}
+section .prompt {
+  font-size: 1.4rem;
+}
+section .prompt a {
+  text-decoration: none;
+  color: #46c68b;
+}
+section .confirmBtn {
+  text-align: center;
+  margin-top: 1rem;
+}
+section .confirmBtn button {
+  width: 80%;
+  height: 4rem;
+  background: #46c68b;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+section .confirmBtn p {
+  font-size: 1.8rem;
+}
+section .confirmBtn p a {
+  text-decoration: none;
+  color: #46C68B;
+}

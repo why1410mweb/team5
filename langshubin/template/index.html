@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	<body>
+		<div class="warp" ng-controller="myTrc">
+			<header>
+				<div class="left"><span><</span>关闭</div>
+				<div class="right">快递员注册</div>
+			</header>
+			<section>
+				<form  name="form1" novalidate>
+				<div class="main_on">
+					<div class="user">
+						<div class="user_img"><img src="../images/B1注册_03.jpg"></div>
+						<div class="inputUser"><input type="number" name="name" placeholder="请输入您的手机号" ng-model="formData.name" required="required" ng-maxlength="11"></div>
+					</div>
+					<span ng-message="form1.name.$error">
+						<span ng-message="required">请输入手机号</span>
+						<span ng-message="maxlength">手机号最长11位数</span>	
+					</span>
+					<div class="password">
+						<div class="pwd_img"><img src="images/B1注册_06.jpg"></div>
+						<div class="inputPwd"><input type="text" placeholder="请输入密码"></div>
+					</div>
+					
+					
+				</div>
+				<div class="main_under">
+					<div class="confirmPwd">
+						<div class="conPwd_img"><img src="images/B1注册_06.jpg"></div>
+						<div class="inputConPwd"><input type="text" placeholder="请再次输入密码"></div>
+					</div>
+					<div class="testNum">
+						<div class="testNum_img"><img src="images/B1注册_11.jpg"></div>
+						<div class="inputTestNum"><input type="text" placeholder="请输入短信验证码">
+							<button>获取验证码</button>
+						</div>
+					</div>
+					
+				</div>
+				<div class="prompt">
+					<input type="checkbox">我同意，<a href="#">《派速魔方快递员使用协议》</a>
+				</div>
+				<div class="confirmBtn">
+					<button>注册</button>
+					<p>已有账号，<a ui-sref="login">去登录</a></p>
+				</div>
+				</form>
+			</section>
+		</div>
+		
+	</body>
+</html>
+<script src="js/angular.js"></script>
+<script src="js/angular-messages.js"></script>
+<script>
+	angular.module('myApp',['ngMessages'])
+	.controller('myTrc',['$scope',function($scope){
+		$scope.formData = {};
+	}])
+</script>
