@@ -1,0 +1,127 @@
+@import url(m_reset.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap header .left {
+  width: 8rem;
+  height: 4rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap header .left img {
+  width: 1rem;
+  height: 1.3rem;
+  background: none;
+  margin: 1.3rem 0.6em 0 1.5rem;
+}
+.wrap header .left p {
+  margin-top: 1rem;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+.wrap header .center {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 4rem;
+}
+.wrap header .center p {
+  color: #FFF;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+}
+.wrap header .right {
+  width: 8rem;
+  height: 4rem;
+  background: none;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+.wrap section::-webkit-scrollbar {
+  width: 0;
+}
+.wrap section .banner {
+  width: 100%;
+  height: 10rem;
+  background: none;
+  overflow: hidden;
+}
+.wrap section .banner img {
+  width: 100%;
+  height: 10rem;
+  background: none;
+  display: block;
+}
+.wrap section .nav {
+  width: 95%;
+  height: 8rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-left: 2.5%;
+  border: 0.1rem solid #bebebe;
+  border-top: none ;
+  margin-top: 2rem;
+}
+.wrap section .nav dl {
+  width: 50%;
+  height: auto;
+  background: none;
+  text-align: center;
+  margin-top: 1rem;
+  border-right: 0.1rem solid #666666 ;
+}
+.wrap section .nav dl dt img {
+  width: 4rem;
+  height: 5re;
+  background: none;
+}
+.wrap section .nav dl dd a {
+  color: #343434;
+}
+.wrap footer {
+  width: 100%;
+  height: 5rem;
+  background: #f5f5f5;
+  border-top: 0.1rem solid #b1b1b1 ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap footer dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin: 0.7rem 2rem 0 2rem;
+  width: 6rem;
+  height: auto;
+  background: none;
+}
+.wrap footer dl dt img {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+}
+.wrap footer dl dd a {
+  color: #313131;
+}
+.wrap footer dl:nth-child(1) a {
+  color: #46c68b;
+}
