@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>快递员注册</title>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/register.css" />
+	</head>
+	<body ng-controller="mainCtrl">
+		<div class="wrap">
+			<header>
+				<div class="left">
+					<dl>
+						<dt><img src="../images/B2logo_1.png"/></dt>
+						<dd>关闭</dd>
+					</dl>
+				</div>
+				<div class="title">快递员注册</div>
+				<div class="right">1111</div>
+			</header>
+			<section>
+				<div class="inp inp_to">
+					<img src="../images/B2logo_11.png"/>
+					<form action="" name="form1">
+						<input type="text" name="num" ng-model="formData.num" ng-maxlength="11" ng-pattern="/[0-9]/" placeholder="请输入您的手机号" />
+						<span ng-messages="form1.num.$error">
+							<span ng-message="maxlength">*手机号不能超过11位</span>
+							<span ng-message="pattern">*手机号只能为数字</span>
+						</span>
+					</form>
+				</div>
+				 <div class="inp inp_list">
+					<img src="../images/B2logo_14.png"/>
+				 	<form action="" name="form2">
+						<input type="password" name="pwd" ng-model="formData.pwd" ng-maxlength="16"  ng-pattern="/[0-9a-zA-Z]/" placeholder="请输入6到16位密码" />
+				 		<span ng-messages="form2.pwd.$error">
+							<span ng-message="maxlength">*密码不能高于16位</span>
+							<span ng-message="pattern">*密码格式不正确</span>
+						</span>
+				 	</form>
+				</div>
+				<div class="inp inp_to">
+					<input type="text" name="" id="" value="" placeholder="请再次输入您的密码" />
+					<img style="width: 2rem;" src="../images/B2logo_14.png"/>
+				</div>
+				<div class="inp inp_list ">
+					<input type="text" name="" id="" value="" placeholder="请输入短信验证码" />
+					<img style="width: 2.3rem; margin-top: 0.2rem;" src="../images/register_03.png"/>
+					<p>获取验证码</p>
+				</div> 
+			
+				<div class="my">
+					<dl>
+						<dt><img src="../images/register_07.png"/></dt>
+						<dd>我同意，<span>《派速魔方快递员使用协议》</span></dd>
+					</dl>
+				</div>
+				<div class="sub">
+					<input type="submit" name="" id="" value="注  册" />
+				</div>
+				<div class="login">
+					<p>已有账号，<span>《去登录》</span></p>
+				</div>
+			</section>
+			<footer></footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/angular-1.3.0.js"></script>
+	<script type="text/javascript" src="../js/angular-messages.js"></script>
+	<script type="text/javascript">
+		angular.module('mainApp', ['ngMessages'])
+		.controller('mainCtrl', ['$scope', function($scope){
+			$scope.formDate = {};
+		}])
+	</script>
+</html>
