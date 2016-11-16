@@ -124,22 +124,23 @@ body,
 .warp .mask {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
-  width: 100%;
+  width: 93%;
   height: 5rem;
   background: none;
-  margin-top: 1.5rem;
-  margin-left: 1.8rem;
+  margin: 1rem 2rem;
 }
 .warp .mask .left {
-  width: 16rem;
+  width: 7rem;
   height: auto;
   background: none;
   font-size: 2rem;
 }
+.warp .mask .only {
+  -webkit-box-flex: 1;
+}
 .warp .mask .right {
-  width: 16rem;
+  width: 9rem;
   height: auto;
   background: none;
   font-size: 2rem;
-  padding-left: 6rem;
 }
