@@ -1,0 +1,111 @@
+@import url("m_resert.css");
+html,
+body,
+.wrap {
+  widows: 100%;
+  height: 100%;
+  background: #eee;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 4.5rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.6rem;
+  line-height: 4.5rem;
+  color: #fff;
+}
+.wrap header .left dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-left: 1rem;
+}
+.wrap header .left dl dt {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+.wrap header .title {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.wrap header .right {
+  color: #333333;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+}
+.wrap section .inp {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+  position: relative;
+}
+.wrap section .inp input {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  border-bottom: 1px solid #46c68b;
+  padding-left: 7rem;
+  font-size: 1.4rem;
+}
+.wrap section .inp .num {
+  width: 7rem;
+  height: auto;
+  background: none;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 1rem;
+  left: 1rem;
+  padding-right: 1rem;
+}
+.wrap section .inp span {
+  color: red;
+}
+.wrap section .inp_list {
+  margin-top: 1.7rem;
+}
+.wrap section .inp_list img {
+  width: 2rem;
+  height: auto;
+  background: none;
+  padding-right: 0.7rem;
+}
+.wrap section .inp_list p {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+  width: 8rem;
+  height: 2.5rem;
+  background: #46c68b;
+  border-radius: 10rem;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.wrap section .sub {
+  width: 90%;
+  height: 5rem;
+  background: none;
+  margin-top: 3rem;
+}
+.wrap section .sub input {
+  width: 100%;
+  height: 4.5rem;
+  background: #46c68b;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 1.3rem;
+  font-size: 1.6rem;
+  color: #fff;
+}

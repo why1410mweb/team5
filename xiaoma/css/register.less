@@ -1,0 +1,162 @@
+@import url("m_resert.css");
+
+html,body,.wrap{
+    widows: 100%;
+    height: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+
+.box(@ver:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;//vertical
+}
+
+.wrap{
+    .box(vertical);
+    
+    header{
+        .full(100%,4.5rem,#333333);
+        .box;
+        font-size: 1.6rem;
+        line-height: 4.5rem;
+        color: #fff;
+        .left{
+            dl{
+                .box;
+                margin-left: 1rem;
+                dt{
+                    margin-right: 0.5rem;
+                    margin-top: 0.2rem;
+                }
+                
+            }
+        }
+        .title{
+            -webkit-box-flex: 1;
+            text-align: center;
+        }
+        
+        .right{
+            color: #333333;
+        }
+        
+        
+    }
+    
+    section{
+        .inp{
+            .full(90%,4rem,none);
+            margin-top: 2rem;
+            margin-left: 1.2rem;
+            position: relative;
+            input{
+                .full(80%,4rem,none);
+                border: 1px solid #999999;
+                padding-left: 5rem;
+                font-size: 1.4rem;
+            }
+            img{
+                .full(1.9rem,auto,none);
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                border-right: 1px solid #cbcbcb;
+                padding-right: 1rem;
+            }
+            span{
+                position: absolute;
+                top: 0.7rem;
+                right: 0;
+                width: 10rem;
+                color: red;
+            }
+        }
+        .inp_to{
+            margin-top: 2rem;
+            input{
+                border-bottom: none;
+            }
+            
+        }
+        .inp_list{
+            margin-top: 0rem;
+            input{
+                border: 1px solid #d2d2d2;
+            }
+            img{
+                .full(2rem,auto,none);
+                padding-right: 0.7rem;
+            }
+            p{
+                position: absolute;
+                top: 1rem;
+                right: 0rem;
+                .full(8rem,2.5rem,#46c68b);
+                border-radius: 10rem;
+                text-align: center;
+                line-height: 2.5rem;
+                color: #fff;
+                font-size: 1.4rem;
+            }
+        }
+        
+        .my{
+            .full(100%,2rem,none);
+            margin-top: 1rem;
+            margin-left: 1.5rem;
+            dl{
+                .box;
+                font-size: 1.4rem;
+                dt{
+                    border: 2px solid #46c68b;
+                    .full(1.3rem,1.2rem,none);
+                    margin-right: 0.5rem;
+                    margin-top: 0.1rem;
+                    
+                    img{
+                        .full(1.1rem,auto,none);
+                        margin-left: 0.1rem;
+                        margin-bottom: 0.3rem;
+                    }
+                }
+                dd{
+                    span{
+                        color: #46c68b;
+                    }
+                }
+            }
+        }
+        .sub{
+            .full(90%,5rem,none);
+            margin-top: 1.5rem;
+            input{
+                .full(100%,4.5rem,#46c68b); 
+                border: none;
+                border-radius: 0.5rem;
+                margin-left: 1.3rem;
+                font-size: 1.6rem;                                                                                                                                                               
+                color: #fff;
+            }
+        }
+        .login{
+            .full(100%,3rem,none);
+            text-align: center;
+            line-height: 3rem;
+            font-size: 1.6rem;
+            span{
+                color: #46c68b;
+            }
+        }
+    }
+    
+    
+}
