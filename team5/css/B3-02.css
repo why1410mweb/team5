@@ -1,0 +1,110 @@
+@import url(m_resert.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 3rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: white;
+}
+header .express_a {
+  text-align: center;
+  width: 30%;
+  height: 3rem;
+  background: none;
+}
+header .express_a span {
+  width: 100%;
+  height: auto;
+  background: none;
+  padding-right: 0.5rem;
+}
+header .express {
+  width: 70%;
+  height: 3rem;
+  background: none;
+}
+header .express h1 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: white;
+}
+section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+section .top {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .top .top_left {
+  width: 45%;
+  height: 40%;
+  background: none;
+  padding-left: 3.5%;
+  padding-top: 2%;
+}
+section .top .top_left img {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+section .top .top_right {
+  width: 45%;
+  height: 40%;
+  background: none;
+  padding-left: 3%;
+  padding-top: 2%;
+}
+section .top .top_right img {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+section .submit {
+  width: 90%;
+  height: 4rem;
+  background: #46c68b;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+footer {
+  width: 100%;
+  height: 10.15rem;
+  background: #ff0000;
+}
+footer p {
+  width: 100%;
+  height: 3.3rem;
+  background: #ffffff;
+  border-bottom: 1px solid black;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
