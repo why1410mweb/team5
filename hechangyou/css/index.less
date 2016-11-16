@@ -1,0 +1,170 @@
+@import url(m_resert.css);
+html{
+    font-size: 62.5%;
+}
+body,html,.warp{
+    width: 100%;
+    height: 100%;   
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+//页面样式
+.warp{
+    .box;
+    //头部样式
+    header{
+        .full(100%,5rem,#cc141e);
+        text-align: center;
+        
+        img{
+            .full(1.2rem,auto,none);
+            margin-top: 0.5rem;
+            position: absolute;
+            top: 1rem;
+            left: 10rem;
+        }
+        p{
+            display: inline;
+            color: white;
+            font-size: 1.5rem;
+            line-height: 5rem;
+        }
+        .road_select{
+            display: inline-block;
+            color: white;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            transform: rotate(90deg);
+        }
+    }
+    //商品样式
+    section{
+        -webkit-box-flex: 1;
+        background: #f0eff5;
+        overflow-y: auto;
+        &::-webkit-scrollbar{width: 0;}
+        position: relative;
+        .shop_show{
+            .full(100%,20rem,white);
+            .box;
+            margin-top: 1rem;
+            .shop_time{
+                margin-top: 1rem;
+                dl{
+                    .box(horizontal);
+                    padding: 1.2rem;
+                    dt{
+                        img{
+                            .full(7rem,auto,none);
+                        }
+                    }
+                    dd{
+                        margin-left: 1rem;
+                        h3{
+                            font-size: 1.8rem;
+                            //font-weight: bold;
+                        }
+                        p{
+                            margin-top: 0.2rem;
+                            color: #aaaaaa;
+                            font-size: 1.5rem;
+                        }
+                        h2{
+                            margin-top: 1rem;
+                            .working{
+                                padding: 0.1rem 0.5rem;
+                                color: #63b91a;
+                                border: 1px solid #63b91a;
+                                border-radius: 0.3rem;
+                            }
+                            .sending{
+                                margin-left: 1rem;
+                                padding: 0.1rem 0.5rem;
+                                color: #f88a31;
+                                border: 1px solid #f88a31;
+                                border-radius: 0.3rem;
+                            }
+                        } 
+                    }
+                }
+                .state{
+                    padding-left: 1.2rem;
+                    position: relative;
+                    .box(horizontal);
+                    img{
+                        .full(0.8rem,auto,none);
+                        position: absolute;
+                        top: 0.3rem;
+                    }
+                    p{
+                        display: inline;
+                        font-size: 1.4rem;
+                        margin-left: 1.5rem;
+                        color: #737373;
+                    }
+                }
+            }
+            .shop_leave{
+                padding-top: 1rem;
+                margin: 1.2rem;
+                border-top: 1px solid #f0f0f0;
+                position: relative;
+                h4{
+                    //overflow: hidden;
+                    //text-overflow: ellipsis;
+                    //white-space: nowrap;
+                    img{
+                        .full(1.5rem,auto,none);
+                    }
+                    color: #737373;
+                    font-size:1.6rem;
+                    p{
+                        display: inline;
+                        margin-left: 1rem;
+                    }
+                }
+                span{
+                    position: absolute;
+                    right: 2rem;
+                    top: 3.5rem;
+                    transform: rotate(270deg);
+                }
+            }
+        }
+        .iwant{
+            .full(4.5rem,auto,none);
+            position: fixed;
+            right: 2rem;
+            bottom: 6rem;
+        }
+    }
+    footer{
+        .full(100%,5rem,#241a19);
+        position: relative;
+        color: white;
+        text-align: center;
+        .index{
+            img{
+                .full(3.5rem,auto,none);
+            }
+            position: absolute;
+            left: 8rem;
+            top: 1rem;
+        }
+        .order{
+            img{
+                .full(2.5rem,auto,none);
+            }
+            position: absolute;
+            right: 8rem;
+            top: 1rem;
+        }
+    }
+}
