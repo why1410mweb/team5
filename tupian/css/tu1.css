@@ -1,0 +1,145 @@
+@import url(m_reset.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp .header {
+  width: 100%;
+  height: 5rem;
+  background: #000000;
+  color: white;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp .header span {
+  width: 10rem;
+  height: auto;
+  background: none;
+  padding-left: 1rem;
+  line-height: 5rem;
+}
+.warp .header h2 {
+  width: 10rem;
+  height: auto;
+  background: none;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+.warp .nav img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.warp .banner {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 31rem;
+  height: 5rem;
+  background: none;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  position: relative;
+}
+.warp .banner span {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #cbcbcb;
+  margin: 1rem;
+}
+.warp .banner span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.warp .banner input {
+  position: absolute;
+  width: 26rem;
+  height: 5rem;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 2rem;
+}
+.warp .banner1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 31rem;
+  height: 5rem;
+  background: none;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  position: relative;
+}
+.warp .banner1 span {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #cbcbcb;
+  margin: 1rem;
+}
+.warp .banner1 span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.warp .banner1 input {
+  position: absolute;
+  width: 26rem;
+  height: 5rem;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 2rem;
+}
+.warp .show {
+  width: 31rem;
+  height: 5rem;
+  background: #008000;
+  line-height: 5rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.warp .mask {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 5rem;
+  background: none;
+  margin-top: 1.5rem;
+  margin-left: 1.8rem;
+}
+.warp .mask .left {
+  width: 16rem;
+  height: auto;
+  background: none;
+  font-size: 2rem;
+}
+.warp .mask .right {
+  width: 16rem;
+  height: auto;
+  background: none;
+  font-size: 2rem;
+  padding-left: 6rem;
+}

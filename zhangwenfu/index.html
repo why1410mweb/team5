@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>路由</title>
+	</head>
+	<body ui-view ng-controller="myCtrl">
+		
+	</body>
+</html>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.js"></script>
+<script type="text/javascript">
+   angular.module('myApp',['ui.router'])
+   .config(function($stateProvider,$urlRouterProvider){
+   	    $urlRouterProvider.otherwise('logo');
+		$stateProvider.state('logo',{
+						url:'/logo',
+						templateUrl:'template/logo.html'
+					})
+		$stateProvider.state('logo.record',{
+					url:'/record',
+					templateUrl:'template/record.html'
+				})
+		$stateProvider.state('logo.record.register',{
+				url:'/register',
+				templateUrl:'template/register.html'
+			})
+		   })
+   .controller('myCtrl',['$scope',function($scope){
+   	
+   }]);
+</script>

@@ -1,0 +1,119 @@
+@import url(m_reset.css);
+html{
+    font-size: 62.5%;
+}
+html,body,.warp{
+    width: 100%;
+    height: 100%;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.warp{
+    .box;
+    .header{
+        .full(100%,5rem,black);
+        color: white;
+        font-size: 2.5rem;
+        .box(horizontal);
+        span{
+            .full(10rem,auto,none);
+             padding-left: 1rem;
+             line-height: 5rem;
+        }
+        h2{ 
+            .full(10rem,auto,none);
+            padding-left: 1.5rem;
+            padding-top: 1rem;
+        }
+    }
+    .nav{
+        img{
+            .full(100%,auto,none);
+        }
+    }
+    .banner{
+        .box(horizontal);
+        .full(31rem,5rem,none);
+        margin-left: 2rem;
+        margin-top: 1rem;
+        border: 1px solid gray;
+        position: relative;
+        span{
+            display: block;
+            .full(3rem,3rem,none);
+            border-right: 1px solid #cbcbcb;
+            margin: 1rem;
+            img{
+                .full(2rem,auto,none);
+                //border-right: 1px solid #cbcbcb;
+            }
+        }
+        input{
+            position: absolute;
+            .full(26rem,5rem,none); 
+            top: 0;
+            right: 0;
+            border: none;
+            font-size: 2rem;
+        }
+    }
+    .banner1{
+        .box(horizontal);
+        .full(31rem,5rem,none);
+        margin-left: 2rem;
+        margin-top: 1rem;
+        border: 1px solid gray;
+        position: relative;
+        span{
+            display: block;
+            .full(3rem,3rem,none);
+            border-right: 1px solid #cbcbcb;
+            margin: 1rem;
+            img{
+                .full(2rem,auto,none);
+                //border-right: 1px solid #cbcbcb;
+            }
+        }
+        input{
+            position: absolute;
+            .full(26rem,5rem,none); 
+            top: 0;
+            right: 0;
+            border: none;
+            font-size: 2rem;
+        }
+    }
+    .show{
+        .full(31rem,5rem,green);
+        line-height: 5rem;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+    .mask{
+        .box(horizontal);
+        .full(100%,5rem,none);
+        margin-top: 1.5rem;
+        margin-left: 1.8rem;
+        .left{
+            .full(16rem,auto,none);
+            font-size: 2rem;
+        }
+        .right{
+            .full(16rem,auto,none);
+             font-size: 2rem;
+             padding-left: 6rem;
+        }
+    }
+}
