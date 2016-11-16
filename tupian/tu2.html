@@ -16,6 +16,7 @@
 				<div class="right"></div>
 			</header>
 			<section id="wrap">
+				<div>
 				<div class="nav">
 					<div class="swiper-container">
 				        <div class="swiper-wrapper">
@@ -54,6 +55,9 @@
 						<dd>回收快件</dd>
 					</dl>
 				</div>
+				</div>
+				<div></div>
+				<div></div>
 			</section>
 			<footer>
 				<dl>
@@ -76,6 +80,15 @@
 <script type="text/javascript" src="js/swiper.js"></script>	
 <script type="text/javascript" src="js/zepto.min.js"></script>
 	<script>
+	//桌面切换
+  
+	$('footer dl').on('tap',function(){
+		var index=$(this).index();
+		//console.log(index);
+		$(this).css('color','#008FD5').siblings().css('color','mediumvioletred');
+		$('section>div').hide().eq(index).show();
+	});
+	//图片轮播
 		var myScroll= new IScroll('#wrap',{
 			scrollbars: true,
 			disableMouse: true,
