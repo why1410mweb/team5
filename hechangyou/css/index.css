@@ -1,0 +1,179 @@
+@import url(m_resert.css);
+html {
+  font-size: 62.5%;
+}
+body,
+html,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  width: 100%;
+  height: 5rem;
+  background: #cc141e;
+  text-align: center;
+}
+.warp header img {
+  width: 1.2rem;
+  height: auto;
+  background: none;
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 10rem;
+}
+.warp header p {
+  display: inline;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 5rem;
+}
+.warp header .road_select {
+  display: inline-block;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transform: rotate(90deg);
+}
+.warp section {
+  -webkit-box-flex: 1;
+  background: #f0eff5;
+  overflow-y: auto;
+  position: relative;
+}
+.warp section::-webkit-scrollbar {
+  width: 0;
+}
+.warp section .shop_show {
+  width: 100%;
+  height: 20rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-top: 1rem;
+}
+.warp section .shop_show .shop_time {
+  margin-top: 1rem;
+}
+.warp section .shop_show .shop_time dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1.2rem;
+}
+.warp section .shop_show .shop_time dl dt img {
+  width: 7rem;
+  height: auto;
+  background: none;
+}
+.warp section .shop_show .shop_time dl dd {
+  margin-left: 1rem;
+}
+.warp section .shop_show .shop_time dl dd h3 {
+  font-size: 1.8rem;
+}
+.warp section .shop_show .shop_time dl dd p {
+  margin-top: 0.2rem;
+  color: #aaaaaa;
+  font-size: 1.5rem;
+}
+.warp section .shop_show .shop_time dl dd h2 {
+  margin-top: 1rem;
+}
+.warp section .shop_show .shop_time dl dd h2 .working {
+  padding: 0.1rem 0.5rem;
+  color: #63b91a;
+  border: 1px solid #63b91a;
+  border-radius: 0.3rem;
+}
+.warp section .shop_show .shop_time dl dd h2 .sending {
+  margin-left: 1rem;
+  padding: 0.1rem 0.5rem;
+  color: #f88a31;
+  border: 1px solid #f88a31;
+  border-radius: 0.3rem;
+}
+.warp section .shop_show .shop_time .state {
+  padding-left: 1.2rem;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.warp section .shop_show .shop_time .state img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  position: absolute;
+  top: 0.3rem;
+}
+.warp section .shop_show .shop_time .state p {
+  display: inline;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+  color: #737373;
+}
+.warp section .shop_show .shop_leave {
+  padding-top: 1rem;
+  margin: 1.2rem;
+  border-top: 1px solid #f0f0f0;
+  position: relative;
+}
+.warp section .shop_show .shop_leave h4 {
+  color: #737373;
+  font-size: 1.6rem;
+}
+.warp section .shop_show .shop_leave h4 img {
+  width: 1.5rem;
+  height: auto;
+  background: none;
+}
+.warp section .shop_show .shop_leave h4 p {
+  display: inline;
+  margin-left: 1rem;
+}
+.warp section .shop_show .shop_leave span {
+  position: absolute;
+  right: 2rem;
+  top: 3.5rem;
+  transform: rotate(270deg);
+}
+.warp section .iwant {
+  width: 4.5rem;
+  height: auto;
+  background: none;
+  position: fixed;
+  right: 2rem;
+  bottom: 6rem;
+}
+.warp footer {
+  width: 100%;
+  height: 5rem;
+  background: #241a19;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.warp footer .index {
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+}
+.warp footer .index img {
+  width: 3.5rem;
+  height: auto;
+  background: none;
+}
+.warp footer .order {
+  position: absolute;
+  right: 8rem;
+  top: 1rem;
+}
+.warp footer .order img {
+  width: 2.5rem;
+  height: auto;
+  background: none;
+}
