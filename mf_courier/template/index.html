@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.css">
+	</head>
+	<body ng-controller="myCtrl">
+		
+		<div class="wrap">
+		<header>
+			<div class="left">
+				<dl>
+					<dt><img src="../images/B2logo_1.png"/></dt>
+					<dd>关闭</dd>
+				</dl>
+			</div>
+			<div class="title">派送魔方 - 快递员</div>
+			<div class="right"></div>
+		</header>
+		<section class="wrapper" id="wrapper">
+			<div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide banner"><img ng-src="{{imgurl}}"/></div>
+					</div>
+				</div>
+				<div class="main">
+					<dl>
+						<dt><img src="../images/index_08.png"/></dt>
+						<dd>扫码存件</dd>
+					</dl>
+					<dl class="dl_list">
+						<dt><img src="../images/index_05.png"/></dt>
+						<dd>回收快件</dd>
+					</dl>
+				</div>
+				<div class="main main_list">
+					<dl>
+						<dt><img src="../images/index_12.png"/></dt>
+						<dd>扫码存件</dd>
+					</dl>
+					<dl class="dl_list">
+						<dt><img src="../images/index_08.png"/></dt>
+						<dd>回收快件</dd>
+					</dl>
+				</div>
+			</div>
+		
+			</section>
+			<footer>
+				<dl>
+					<dt><img src="../images/index_19.png"/></dt>
+					<dd>首页</dd>
+				</dl>
+				<dl>
+					<dt><img src="../images/index_22.png"/></dt>
+					<dd>首页</dd>
+				</dl>
+				<dl>
+					<dt><img src="../images/index_24.png"/></dt>
+					<dd>首页</dd>
+				</dl>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="../js/swiper.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/angular-1.3.0.js"></script>
+	<script type="text/javascript">
+		angular.module('myApp',[])
+		.controller('myCtrl', ['$scope', function($scope){
+			$scope.imgurl = '../images/index_02.png';
+		}])
+		var myScroll= new IScroll('#wrapper',{
+				scrollbars: true,
+				disableMouse: true,
+	    		disablePointer: true,
+	    		scrollbars: 'custom'
+			})
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        slidesPerView:1,
+		        paginationClickable: true,
+		        spaceBetween: 0,
+		        freeMode: true,
+		        nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				loop:true,
+				autoplay : 1000//轮播时间
+		    });	
+	</script>
+</html>
