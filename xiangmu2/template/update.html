@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>忘记密码/修改密码</title>
+		<link rel="stylesheet" href="../css/update.css" type="text/css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body ng-controller="myController">
+		<div class="wrap">
+			<header>
+				<div class="left">
+					<span>&lt;</span>
+					<p>关闭</p>
+				</div>
+				<div class="center"><p>修改密码</p></div>
+				<div class="right"></div>
+			</header>
+			<section>
+				<div class="nav">
+					<div class="get">
+						<div class="phone">
+						<p>手机号</p>
+						<form name="form1" novalidate>
+						    <input type="text" name="name" ng-model="formData.name"  ng-maxlength="11" ng-pattern="/[0-9]/" placeholder="请输入您的手机号"/>
+					        <span ng-messages="form1.name.$error">						
+								<span ng-message="maxlength">手机号最长11位</span>
+								<span ng-message="pattern">手机号格式不正确</span>
+							</span>
+						</form>
+						</div>
+						<div class="phone">
+							<p>新密码</p>
+							<input type="text" placeholder="请输入 6 到 16 位密码"/>
+						</div>
+						<div class="phone">
+							<p>确认密码</p>
+							<input type="text" placeholder="请输入 6 到 16 位密码"/>
+						</div>
+					</div>
+					<div class="next">
+						<p>短信验证码</p>
+					    <input type="text" placeholder="请输入验证码"/>
+					    <a href="">获取验证码</a>
+					</div>
+				</div>
+				<div class="update">
+					<a href="">确认修改</a>
+				</div>
+			</section>
+			<footer></footer>
+		</div>
+	</body>
+</html>
+<script src="../js/angular.js"></script>
+<script src="../js/angular-messages.js"></script>
+<script>
+	angular.module('myApp',['ngMessages'])
+	.controller('myController',['$scope',function($scope){
+		$scope.formData = {};
+	}])
+</script>

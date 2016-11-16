@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/B3-02.css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+	</head>
+	<body ng-app="myApp" ng-controller="personCtrl">
+		<div class="wrap">
+			<header>
+				<p class="express_a"><span>&lt;</span>关闭</p><p class="express">上传证件照</p>
+			</header>
+			<section>
+				<div class="top">
+					<div class="top_left" ng-click="toggle()"><img src="../images/B3-02上传证件照片_03.jpg"/></div>
+					<div class="top_right" ng-click="toggle()"><img src="../images/B3-02上传证件照片_03.jpg"/></div>
+				</div>
+				<div class="top">
+					<div class="top_left" ng-click="toggle()"><img src="../images/B3-02上传证件照片_03.jpg"/></div>
+					<div class="top_right" ng-click="toggle()"><img src="../images/B3-02上传证件照片_03.jpg"/></div>
+				</div>
+				<div class="submit">
+					提交
+				</div>
+			</section>
+			<footer ng-hide="myVar">
+				<p ng-model="photo">拍照</p>
+				<p ng-model="photo"1>从手机相册选择</p>
+				<p ng-model="photo2" ng-click="toggle()">取消</p>
+			</footer> 
+		</div>
+	</body>
+</html>
+<script src="../angularjs1.5.2/angular.min.js"></script>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('personCtrl', function($scope) {
+    $scope.myVar = true;
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+    }
+});
+</script>

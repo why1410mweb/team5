@@ -1,0 +1,84 @@
+@import url(m_resert.css);
+html{
+    font-size: 62.5%;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.pos(@a){
+    position: @a;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.wrap{
+    .box(vertical);
+}
+header{
+    .full(100%,3rem,#333333);
+    .box(horizontal);
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: white;
+   .express_a{
+       text-align: center;
+       .full(30%,3rem,none);
+   span{
+       .full(100%,auto,none);
+        padding-right:0.5rem;  
+    }
+   
+   }
+   .express{
+       .full(70%,3rem,none);
+        h1{
+        .full(100%,3rem,none);
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: white;
+    }
+   }   
+}
+section{
+    -webkit-box-flex: 1;
+    .full(100%,auto,none);
+    font-size: 1.6rem;
+    .content{
+        padding: 1rem;
+        p{
+            border-bottom: 1px solid blue;
+            padding-top: 1rem;
+            input{
+                .full(70%,3rem,none);
+                margin-left: 5%;
+                border: none;
+            }
+            span{
+                .full(3rem,3rem,none);
+                text-align: center;
+                line-height: 3rem;
+                margin-left: 10%;
+                
+            }
+            select{
+                margin-left: 50%;
+            }
+        }
+        .submit{
+            margin-top: 4rem;
+            .full(100%,4rem,#46c68b);
+            text-align: center;
+            line-height: 4rem;
+            
+        }
+    }
+    
+}
