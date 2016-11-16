@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>路由</title>
+</head>
+<body ui-view ng-controller="myCtrl">
+	
+</body>
+<script type="text/javascript" src="js/angular-1.3.0.js"></script>
+<script type="text/javascript" src="js/angular-ui-router.js"></script>
+<script type="text/javascript">
+	angular.module('myApp', ['ui.router'])
+	.config(function ($stateProvider, $urlRouterProvider) { 
+     $urlRouterProvider.otherwise('login');
+     $stateProvider
+        .state("login", {
+            url: "/login",
+            templateUrl: "template/login.html"
+        })
+        // .state("PageTab.Page1", {
+        //     url:"/Page1",
+        //     templateUrl: "Page-1.html"
+        // })
+        // .state("PageTab.Page2", {
+        //     url:"/Page2",
+        //     templateUrl: "Page-2.html"
+        // })
+        // .state("PageTab.Page3", {
+        //     url:"/Page3",
+        //     templateUrl: "Page3.html"
+        // });
+    })
+	.controller('myCtrl', ['$scope', function($scope){
+		
+	}])
+
+</script>
+</html>
