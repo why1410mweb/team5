@@ -1,0 +1,202 @@
+@import url(m_reset.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.warp header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 5rem;
+  background: #000000;
+}
+.warp header .left {
+  color: white;
+  padding-top: 1.3rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 10rem;
+  height: auto;
+  background: none;
+  font-size: 1.9rem;
+}
+.warp header .left span {
+  margin-left: 1rem;
+}
+.warp header .left h2 {
+  padding-left: 1rem;
+}
+.warp header .center {
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+.warp header .right {
+  width: 10rem;
+  height: auto;
+  background: none;
+}
+.warp section .banner {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 29rem;
+  height: 5rem;
+  background: none;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  position: relative;
+}
+.warp section .banner span {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #cbcbcb;
+  margin: 1rem;
+}
+.warp section .banner span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.warp section .banner input {
+  position: absolute;
+  width: 24rem;
+  height: 5rem;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 2rem;
+}
+.warp section .banner1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 29rem;
+  height: 5rem;
+  background: none;
+  margin-left: 1rem;
+  border: 1px solid gray;
+  position: relative;
+}
+.warp section .banner1 span {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #cbcbcb;
+  margin: 1rem;
+}
+.warp section .banner1 span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.warp section .banner1 input {
+  position: absolute;
+  width: 24rem;
+  height: 5rem;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 2rem;
+}
+.warp section .banner2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 29rem;
+  height: 5rem;
+  background: none;
+  margin-left: 1rem;
+  border: 1px solid gray;
+  position: relative;
+}
+.warp section .banner2 span {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #cbcbcb;
+  margin: 1rem;
+}
+.warp section .banner2 span img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+.warp section .banner2 input {
+  position: absolute;
+  width: 24rem;
+  height: 5rem;
+  background: none;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 2rem;
+}
+.warp section .banner2 p {
+  width: 7rem;
+  height: 2.5rem;
+  background: none;
+  margin-left: 16.8rem;
+  margin-top: 1.2rem;
+  border: 1px solid gray;
+  border-radius: 0.8rem;
+  background: green;
+  color: white;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+.warp section .show {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 2rem;
+  background: none;
+  margin-top: 1.5rem;
+  position: relative;
+}
+.warp section .show input {
+  margin-left: 0.8rem;
+  position: absolute;
+  top: 0.3rem;
+}
+.warp section .show p {
+  padding-left: 2.2rem;
+}
+.warp section .nav {
+  width: 20rem;
+  height: 3rem;
+  background: #008000;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  border-radius: 0.5rem;
+  color: white;
+  padding-left: 8.3rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.warp section .nav1 {
+  width: 100%;
+  height: 3rem;
+  background: none;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
