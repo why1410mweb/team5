@@ -1,0 +1,130 @@
+html,body,.warp{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient:@ver ;
+}
+.warp{
+    .box();;
+}
+header{
+    .full(100%,4rem,#333333);
+    line-height: 4rem;
+    color: white;
+    font-size: 1.6rem;
+    
+    span{
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: white;
+        padding-right: 0.2rem;
+        padding-left: 1rem;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    text-align: center;
+    overflow-x: hidden;
+    .banner{
+        .full(100%,auto,none);
+        img{
+            .full(100%,auto,none);
+        }
+    }
+    .iphone{
+        .full(90%,4rem,none);
+        text-align: center;
+        margin-top: 1rem;
+        border: 1px  solid #ccc;
+        margin-left:5% ;
+        .box(horizontal);
+        .phone_img{
+           img{
+               .full(2rem,3rem,none); 
+               padding-top: 0.5rem;
+               padding-left: 0.5rem;
+            }
+        }
+        .phoneNum{
+            -webkit-box-flex: 1;
+            text-align: center;
+            
+            input{
+                .full(90%,3.5rem,none);
+                border: none;
+            }
+            
+        }
+    }
+    .pwd{
+         .full(90%,4rem,none);
+        text-align: center;
+        margin-top: 1rem;
+        border: 1px  solid #ccc;
+        margin-left:5% ;
+        .box(horizontal);
+        .pwd_img{
+            
+            img{
+               .full(2rem,3rem,none); 
+               padding-top: 0.5rem;
+               padding-left: 0.5rem;
+            }
+            
+        }
+        .pwdNum{
+            -webkit-box-flex: 1;
+            text-align: center;
+            input{
+                .full(90%,3.5rem,none);
+                border: none;
+            }
+            
+        }
+    }
+    button{
+        .full(90%,4rem,#46c68b);
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height:4rem ;
+        margin-top: 1rem;
+        border-radius: 0.7rem;
+    }
+    .prompt{
+        .box(horizontal);
+        .pro_left{
+            .full(50%,auto,none);
+            text-align: left;
+            padding-left: 5%;
+            a{
+                text-decoration: none;
+                color: #676767;
+                font-size: 1.4rem;
+            }
+        }
+        .pro_right{
+           .full(50%,auto,none);
+            text-align: left;
+            padding-left: 20%;
+            a{
+                text-decoration: none;
+                color: #676767;
+                font-size: 1.4rem;
+            }  
+        }
+    }
+    
+}

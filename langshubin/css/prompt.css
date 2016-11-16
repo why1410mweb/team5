@@ -1,0 +1,46 @@
+html,
+body,
+.warp {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.warp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .top_left {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  line-height: 4rem;
+}
+header .top_left span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+header .top_right {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  line-height: 4rem ;
+}
+section {
+  -webkit-box-flex: 1;
+}

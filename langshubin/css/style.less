@@ -1,0 +1,198 @@
+html,body,.warp{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.warp{
+    .box();
+}
+header{
+    .full(100%,4rem,#333333);
+    .box(horizontal);
+    .left{
+        .full(4rem,4rem,none);
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.4rem;
+        color: white;
+        span{
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bolder;
+            padding-right: 0.3rem;
+        }
+    }
+    .right{
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.8rem;
+        color: white;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    .main_on{
+        .full(100%,auto,none);
+        .user{
+            .full(100%,4rem,none);
+            border: 1px solid #ccc;
+            .box(horizontal);
+            margin-top: 1rem;
+            .user_img{
+                .full(15%,auto,none);
+                border-right: 1px solid #ccc;
+                img{
+                     .full(2rem,3rem,none);
+                     padding-left: 0.5rem;
+                     padding-top: 0.3rem;
+                }
+               
+            }
+            .inputUser{
+                -webkit-box-flex: 1;
+                text-align: center;
+                input{
+                    height: 3.5rem;
+                    width: 80%;
+                    border: none;
+                    
+                }
+               
+            }
+        }
+        .password{
+            .full(100%,4rem,none);
+            border: 1px solid #ccc;
+            border-top: none;
+            .box(horizontal);   
+            .pwd_img{
+                .full(15%,auto,none);
+                border-right: 1px solid #ccc;
+                img{
+                     .full(2rem,3rem,none);
+                     padding-left: 0.5rem;
+                     padding-top: 0.3rem;
+                }
+               
+            }
+            .inputPwd{
+                -webkit-box-flex: 1;
+                text-align: center;
+                input{
+                    height: 3.5rem;
+                    width: 80%;
+                    border: none;
+                    
+                }
+               
+            }
+        }
+    }
+    .main_under{
+        margin-top: 2rem;
+        .confirmPwd{
+            .full(100%,4rem,none);
+            border: 1px solid #ccc;
+           
+            .box(horizontal);   
+            .conPwd_img{
+                .full(15%,auto,none);
+                border-right: 1px solid #ccc;
+                img{
+                     .full(2rem,3rem,none);
+                     padding-left: 0.5rem;
+                     padding-top: 0.3rem;
+                }
+               
+            }
+            .inputConPwd{
+                -webkit-box-flex: 1;
+                text-align: center;
+                input{
+                    height: 3.5rem;
+                    width: 80%;
+                    border: none;
+                   }
+               
+    
+            }
+        }   
+         .testNum{
+            .full(100%,4rem,none);
+            border: 1px solid #ccc;
+            border-top: none;
+            .box(horizontal);   
+            .testNum_img{
+                .full(15%,auto,none);
+                border-right: 1px solid #ccc;
+                img{
+                     .full(3rem,2rem,none);
+                     padding-left: 0.5rem;
+                     padding-top: 0.8rem;
+                }
+               
+            }
+            .inputTestNum{
+                -webkit-box-flex: 1;
+                padding-left: 2rem;
+                input{
+                    height: 3.5rem;
+                    width: 50%;
+                    border: none;
+                   }
+                   button{
+                       width: 40%;
+                       height: 3rem;
+                       border: 1px solid #ccc;
+                       border-radius: 1.3rem;
+                       color: white;
+                       background: #46c68b;
+                   }
+               
+    
+            }
+        }   
+    }
+    .prompt{
+        font-size: 1.4rem;
+        a{
+            text-decoration: none;
+            color: #46c68b;
+        }
+       
+    }
+    .confirmBtn{
+        text-align: center;
+        margin-top: 1rem;
+        button{
+            .full(80%,4rem,#46c68b);
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.8rem;
+            a{
+                text-decoration: none;
+                color: #46C68B;
+            }
+        }
+    }
+}
+
