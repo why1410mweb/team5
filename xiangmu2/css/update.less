@@ -1,0 +1,135 @@
+@import url(m_reset.css);
+html{
+    font-size: 62.5%;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.wrap{
+    .box(vertical);
+    header{
+        .full(100%,4.5rem,#333333);
+        .box(horizontal);
+        .left{
+            .full(6rem,100%,none);
+            .box(horizontal);
+            line-height: 4.5rem;
+            font-size: 1.6rem;
+            color: #FFF;
+            span{
+                margin-left: 1.5rem;
+            }
+            p{
+                margin-left: 0.9rem;
+            }
+        }
+        .center{
+            -webkit-box-flex: 1;
+            text-align: center;
+            line-height: 4.5rem;
+            p{
+                color: #FFF;
+                font-size: 1.6rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+        .right{
+            .full(6rem,100%,none);
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f5f5f5;
+        .nav{
+            .full(100%,20rem,#FFF);
+            margin-top: 1rem;
+           .get{
+               .full(95%,15rem,none);
+               margin-left: 5%;
+               .phone{
+                   .full(100%,5rem,none);
+                   .box(horizontal);
+                    position: relative;
+                    font-size: 1.4rem;
+                    border-bottom: 0.1rem solid #46c68b;
+                   input{
+                       .full(100%,5rem,none);
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       padding-left: 6rem;
+                       border: none;
+                   }
+                   p{
+                       position: absolute;
+                       top: 1.5rem;
+                       left: 0;
+                       letter-spacing: 0.3rem;                     
+                   }
+                   span{
+                       .full(9.5rem,100%,none);
+                       position: absolute;
+                       top: 0.7rem;
+                       right: 0rem;
+                       color: red;
+                   }
+               }
+           }
+           .next{
+               .full(95%,5rem,none);
+               margin-left: 5%;
+                     position: relative;
+                    font-size: 1.4rem;
+                   input{
+                       .full(100%,5rem,none);
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       padding-left: 7rem;
+                       border: none;
+                   }
+                   p{
+                       position: absolute;
+                       top: 1.5rem;
+                       left: 0;
+                       letter-spacing: 0.2rem;                     
+                   }
+                   a{
+                       position: absolute;
+                       top: 0.8rem;
+                       right: 1.5rem;
+                       color: #FFF;
+                       padding: 0.8rem 1rem;
+                       background: #46c68b;
+                       border-radius:2rem ;
+                   }
+           }
+        }
+        .update{
+            .full(95%,4rem,#46c68b);
+            margin-left: 2.5%;
+            text-align: center;
+            line-height: 4rem;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            border-radius:0.5rem ;
+            a{
+                color: #FFF;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+    footer{
+        .full(100%,0rem,none);
+    }
+}

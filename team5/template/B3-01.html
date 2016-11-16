@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/B3-01 .css"/>
+		<meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+			<p class="express_a"><span>&lt;</span>关闭</p><p class="express">输入认证信息</p>
+		</header>
+		<section>
+			<div class="content">
+				<p>身份证号<input type="text"  placeholder="请输入您的身份证号"/></p>
+				<p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名<input type="text"  placeholder="请输入您的身份证号"/></p>
+				<p ng-app="myApp" ng-controller="myCtrl">公&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;司<span>{{selectedSite.site}}</span>
+					<select name="" ng-model="selectedSite" ng-options="x.site for x in sites">
+					</select>
+				</p>
+				<p>手&nbsp;机&nbsp;号<input type="text"  placeholder="请输入您的身份证号"/></p>
+				<div class="submit">
+					登录
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+		</div>
+	</body>
+</html>
+<script src="../angularjs1.5.2/angular.min.js"></script>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope) {
+    $scope.sites = [
+	    {site : "1"},
+	    {site : "2"},
+	    {site : "3"}
+	];
+});
+</script>
